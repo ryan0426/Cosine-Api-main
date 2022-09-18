@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_resume 简历dao
  */
 @Mapper

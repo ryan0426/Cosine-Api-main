@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 按行业和时间请求Vo
  */
 @Data

@@ -25,7 +25,7 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 学校服务
  */
 @Service

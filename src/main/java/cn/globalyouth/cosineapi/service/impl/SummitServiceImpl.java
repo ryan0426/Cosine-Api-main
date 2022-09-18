@@ -28,7 +28,7 @@ import java.io.PrintWriter;
 
 
 /**
- * @author liuyufeng 峰会接口服务
+ * @author liuyufeng, Rujun Yan 峰会接口服务
  */
 @Service
 @Slf4j

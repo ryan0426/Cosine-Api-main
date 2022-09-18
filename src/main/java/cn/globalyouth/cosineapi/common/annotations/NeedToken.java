@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 需要token的接口
  */
 @Target(ElementType.METHOD)

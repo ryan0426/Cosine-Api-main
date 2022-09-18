@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_record_award 履历 获奖经历dao
  */
 @Mapper

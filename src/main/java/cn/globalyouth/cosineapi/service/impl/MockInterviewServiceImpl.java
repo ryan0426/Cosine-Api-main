@@ -32,7 +32,7 @@ import java.io.PrintWriter;
 
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 模拟面试服务
  */
 @Service

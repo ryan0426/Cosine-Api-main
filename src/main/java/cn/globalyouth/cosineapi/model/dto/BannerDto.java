@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 广告图dto
  */
 @Data

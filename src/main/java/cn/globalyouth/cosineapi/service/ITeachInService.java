@@ -5,7 +5,7 @@ import cn.globalyouth.cosineapi.model.dto.TeachInDto;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 宣讲会服务
  */
 public interface ITeachInService {

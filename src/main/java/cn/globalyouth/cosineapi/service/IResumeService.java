@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 简历服务
  */
 public interface IResumeService {

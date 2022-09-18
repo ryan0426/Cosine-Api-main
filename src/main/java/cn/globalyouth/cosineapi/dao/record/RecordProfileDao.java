@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_record_profile 履历 头像dao
  */
 @Mapper

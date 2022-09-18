@@ -5,7 +5,7 @@ import cn.globalyouth.cosineapi.model.vo.req.SendMultiReqVo;
 import cn.globalyouth.cosineapi.model.vo.req.SendReqVo;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 投递服务
  */
 public interface ISendService {

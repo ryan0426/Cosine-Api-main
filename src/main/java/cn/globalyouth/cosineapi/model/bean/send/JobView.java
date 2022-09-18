@@ -6,7 +6,7 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_job_view 查看职位
  */
 @Data

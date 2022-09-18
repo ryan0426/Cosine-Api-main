@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Param;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_banner 广告图dao
  */
 @Mapper

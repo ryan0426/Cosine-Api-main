@@ -1,7 +1,7 @@
 package cn.globalyouth.cosineapi.common.utils;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * icepdf pdf转图片工具
  */
 public class IcePdfUtils {

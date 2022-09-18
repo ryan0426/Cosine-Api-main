@@ -5,7 +5,7 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_resume_case 简历案例
  */
 @Data

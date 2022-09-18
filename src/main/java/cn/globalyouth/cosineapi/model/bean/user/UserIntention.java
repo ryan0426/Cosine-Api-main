@@ -7,7 +7,7 @@ import java.util.Date;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_user_intention 求职性质
  */
 @Data

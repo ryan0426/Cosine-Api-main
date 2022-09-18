@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.*;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_job 职位dao
  */
 @Mapper

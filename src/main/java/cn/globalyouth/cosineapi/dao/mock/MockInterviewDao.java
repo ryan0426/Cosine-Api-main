@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_mock_interview 模拟面试dao
  */
 @Mapper

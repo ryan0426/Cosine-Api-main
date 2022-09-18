@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.annotation.Resource;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 履历库控制器
  */
 @RestController

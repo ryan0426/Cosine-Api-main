@@ -3,7 +3,7 @@ package cn.globalyouth.cosineapi.model.vo.req;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 微信登录请求Vo
  */
 @Data

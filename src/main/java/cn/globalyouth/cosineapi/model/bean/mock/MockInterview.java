@@ -5,7 +5,7 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_mock_interview 模拟面试
  */
 @Data

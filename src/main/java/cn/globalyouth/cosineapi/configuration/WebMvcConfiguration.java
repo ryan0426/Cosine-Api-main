@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import javax.annotation.Resource;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 拦截器配置
  */
 @Configuration

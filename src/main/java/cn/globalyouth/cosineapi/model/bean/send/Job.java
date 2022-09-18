@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_job 职位
  */
 @Data

@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_resume 简历
  */
 @Data

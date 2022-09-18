@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_calendar 日程
  */
 @Data

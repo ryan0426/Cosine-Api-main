@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 搜索历史服务
  */
 @Service

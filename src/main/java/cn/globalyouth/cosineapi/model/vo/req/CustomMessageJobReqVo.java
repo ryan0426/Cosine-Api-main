@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 定时发送自定义消息请求Vo
  */
 @Data

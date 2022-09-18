@@ -3,7 +3,7 @@ package cn.globalyouth.cosineapi.model.dto.user;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 用户dto
  */
 @Data

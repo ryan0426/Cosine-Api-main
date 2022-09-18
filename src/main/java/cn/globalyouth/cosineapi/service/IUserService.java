@@ -16,7 +16,7 @@ import cn.globalyouth.cosineapi.model.vo.req.SendStateReqVo;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 用户服务
  */
 public interface IUserService {

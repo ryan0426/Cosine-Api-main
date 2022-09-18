@@ -35,7 +35,7 @@ import java.io.StringWriter;
 import java.io.PrintWriter;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 投递服务
  */
 @Service

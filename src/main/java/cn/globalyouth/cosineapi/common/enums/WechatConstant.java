@@ -1,7 +1,7 @@
 package cn.globalyouth.cosineapi.common.enums;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 微信小程序相关数据
  */
 public interface WechatConstant {

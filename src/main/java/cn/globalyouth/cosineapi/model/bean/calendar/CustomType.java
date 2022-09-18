@@ -3,7 +3,7 @@ package cn.globalyouth.cosineapi.model.bean.calendar;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_custom_type 自定义事件类型
  */
 @Data

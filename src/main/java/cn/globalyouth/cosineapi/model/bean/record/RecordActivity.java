@@ -6,7 +6,7 @@ import java.sql.Date;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_record_activity 履历 组织活动经历
  */
 @Data

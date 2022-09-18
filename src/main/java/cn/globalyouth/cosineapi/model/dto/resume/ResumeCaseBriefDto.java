@@ -4,7 +4,7 @@ import java.util.List;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 简历案例 简要信息
  */
 @Data

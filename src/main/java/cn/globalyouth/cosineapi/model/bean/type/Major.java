@@ -3,7 +3,7 @@ package cn.globalyouth.cosineapi.model.bean.type;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_major 大学专业
  */
 @Data

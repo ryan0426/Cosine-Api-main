@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.SelectProvider;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_school 学校dao
  */
 @Mapper

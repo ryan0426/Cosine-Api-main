@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 日历添加请求对象 自定义事件
  */
 @Data

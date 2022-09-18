@@ -6,7 +6,7 @@ import cn.globalyouth.cosineapi.model.dto.lesson.LessonBriefDto;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 课程服务
  */
 public interface ILessonService {

@@ -35,7 +35,7 @@ import java.io.StringWriter;
 import java.io.PrintWriter;
 
 /**
- * @author liuyufeng 简历服务
+ * @author liuyufeng, Rujun Yan 简历服务
  */
 @Service
 @Slf4j

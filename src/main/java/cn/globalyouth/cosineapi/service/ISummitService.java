@@ -4,7 +4,7 @@ import cn.globalyouth.cosineapi.model.bean.summit.VisaInfo;
 import cn.globalyouth.cosineapi.common.utils.ApiResponse;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 峰会接口服务
  */
 public interface ISummitService {

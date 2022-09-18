@@ -5,7 +5,7 @@ import cn.globalyouth.cosineapi.common.utils.ApiResponse;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 学校服务
  */
 public interface ISchoolService {

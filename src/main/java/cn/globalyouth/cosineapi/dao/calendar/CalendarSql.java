@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 日历sql语句生成
  */
 public class CalendarSql {

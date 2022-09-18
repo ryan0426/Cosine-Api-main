@@ -8,7 +8,7 @@ import cn.globalyouth.cosineapi.model.vo.req.CalendarEventReqVo;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 日程服务
  */
 public interface ICalendarService {

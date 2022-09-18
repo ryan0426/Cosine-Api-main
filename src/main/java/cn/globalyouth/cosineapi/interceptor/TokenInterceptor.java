@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * token拦截器
  */
 @Component

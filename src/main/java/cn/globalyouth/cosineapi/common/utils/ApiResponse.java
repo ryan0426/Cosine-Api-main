@@ -4,7 +4,7 @@ import cn.globalyouth.cosineapi.common.enums.ResponseEnumState;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * api返回结果封装
  */
 @Data

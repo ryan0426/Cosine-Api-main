@@ -4,7 +4,7 @@ import cn.globalyouth.cosineapi.common.utils.StringUtils;
 import org.apache.ibatis.jdbc.SQL;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_school sql生成器
  */
 public class SchoolSql {

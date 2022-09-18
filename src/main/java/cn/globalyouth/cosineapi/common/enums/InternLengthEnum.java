@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 实习时间
  */
 @Getter

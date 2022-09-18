@@ -20,7 +20,7 @@ import java.io.PrintWriter;
 
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 广告图片服务
  */
 @Service

@@ -6,7 +6,7 @@ import cn.globalyouth.cosineapi.model.dto.HistoryDto;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 搜索历史服务
  */
 public interface IHistoryService {

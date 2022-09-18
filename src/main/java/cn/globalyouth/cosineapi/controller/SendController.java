@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 投递控制器
  */
 @RestController

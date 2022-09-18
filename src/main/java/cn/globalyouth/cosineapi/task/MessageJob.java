@@ -11,7 +11,7 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 微信小程序发送模版消息
  */
 @Slf4j

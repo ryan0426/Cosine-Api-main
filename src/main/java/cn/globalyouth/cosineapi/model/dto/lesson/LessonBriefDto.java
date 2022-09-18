@@ -3,7 +3,7 @@ package cn.globalyouth.cosineapi.model.dto.lesson;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 课程简要信息
  */
 @Data

@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 事件背景色枚举
  */
 @Getter

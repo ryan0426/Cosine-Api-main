@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_user_intention 求职性质dao
  */
 @Mapper

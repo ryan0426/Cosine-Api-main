@@ -6,7 +6,7 @@ import org.apache.ibatis.jdbc.SQL;
 import static cn.globalyouth.cosineapi.common.utils.StringUtils.notEmpty;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 个人履历库 sql生成
  */
 public class RecordSql {

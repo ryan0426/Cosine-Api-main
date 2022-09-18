@@ -8,7 +8,7 @@ import java.util.List;
 import static cn.globalyouth.cosineapi.common.utils.StringUtils.*;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 用户sql生成类
  */
 public class UserSql {

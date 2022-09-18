@@ -9,7 +9,7 @@ import cn.globalyouth.cosineapi.model.vo.req.CustomTypeReqVo;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 分类类目服务
  */
 public interface ITypeService {

@@ -6,7 +6,7 @@ import cn.globalyouth.cosineapi.model.dto.BannerDto;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 广告图片服务
  */
 public interface IBannerService {

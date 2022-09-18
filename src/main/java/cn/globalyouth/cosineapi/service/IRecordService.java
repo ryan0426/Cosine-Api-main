@@ -6,7 +6,7 @@ import cn.globalyouth.cosineapi.model.vo.req.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 履历库服务
  */
 public interface IRecordService {

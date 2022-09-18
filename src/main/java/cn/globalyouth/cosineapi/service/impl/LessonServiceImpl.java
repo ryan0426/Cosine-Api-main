@@ -19,7 +19,7 @@ import java.io.StringWriter;
 import java.io.PrintWriter;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 课程服务
  */
 @Service

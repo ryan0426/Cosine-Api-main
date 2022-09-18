@@ -6,7 +6,7 @@ import cn.globalyouth.cosineapi.common.utils.ApiResponse;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 职位服务
  */
 public interface IPositionService {

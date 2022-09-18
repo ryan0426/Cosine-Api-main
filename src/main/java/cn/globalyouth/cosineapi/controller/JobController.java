@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 职位控制器
  */
 @RestController

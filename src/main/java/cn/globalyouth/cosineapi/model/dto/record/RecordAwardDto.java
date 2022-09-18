@@ -3,7 +3,7 @@ package cn.globalyouth.cosineapi.model.dto.record;
 import lombok.Data;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 履历 获奖经历
  */
 @Data

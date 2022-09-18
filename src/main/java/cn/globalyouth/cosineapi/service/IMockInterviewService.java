@@ -7,7 +7,7 @@ import cn.globalyouth.cosineapi.model.vo.req.JoinMockReqVo;
 import java.util.List;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 模拟面试服务
  */
 public interface IMockInterviewService {

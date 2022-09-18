@@ -6,7 +6,7 @@ import cn.globalyouth.cosineapi.model.vo.req.CancelMessageJobReqVo;
 import cn.globalyouth.cosineapi.model.vo.req.CustomMessageJobReqVo;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 订阅消息服务
  */
 public interface IMessageService {

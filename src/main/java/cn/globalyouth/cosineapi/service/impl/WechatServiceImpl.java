@@ -18,7 +18,7 @@ import java.io.PrintWriter;
 
 
 /**
- * @author liuyufeng 微信小程序服务端
+ * @author liuyufeng, Rujun Yan 微信小程序服务端
  */
 @Service
 @Slf4j

@@ -5,7 +5,7 @@ import cn.globalyouth.cosineapi.model.vo.req.BindMessageReqVo;
 import cn.globalyouth.cosineapi.model.vo.req.CustomMessageReqVo;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 微信小程序服务端
  */
 public interface IWechatService {

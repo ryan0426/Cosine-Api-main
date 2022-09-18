@@ -24,7 +24,7 @@ import java.io.PrintWriter;
 
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 订阅消息服务
  */
 @Service

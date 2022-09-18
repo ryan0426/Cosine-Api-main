@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 职位服务
  */
 public interface IJobService {

@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 语言枚举
  */
 @Getter

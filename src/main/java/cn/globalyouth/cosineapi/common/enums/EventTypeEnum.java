@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 日历事件类型
  */
 @Getter

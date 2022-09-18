@@ -6,7 +6,7 @@ import lombok.Data;
 import java.sql.Date;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * 履历 教育经历
  */
 @Data

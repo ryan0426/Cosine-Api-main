@@ -9,7 +9,7 @@ import java.util.Date;
 import java.sql.Timestamp;
 
 /**
- * @author liuyufeng
+ * @author liuyufeng, Rujun Yan
  * tb_send 投递
  */
 @Data
