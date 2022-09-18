@@ -1,0 +1,40 @@
+2021-06-10 14:13:12,423 -2243 [main] INFO  cn.globalyouth.cosineapi.CosineApiApplication - Starting CosineApiApplication v0.0.1-SNAPSHOT using Java 16.0.1 on DESKTOP-IN4FS9D with PID 3816 (C:\Documents\问路\Cosine-Api\target\cosine-api-0.0.1-SNAPSHOT.jar started by yznzh in C:\Documents\问路\Cosine-Api\target)
+2021-06-10 14:13:12,436 -2256 [main] INFO  cn.globalyouth.cosineapi.CosineApiApplication - No active profile set, falling back to default profiles: default
+2021-06-10 14:13:16,190 -6010 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9339 (https)
+2021-06-10 14:13:16,299 -6119 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:16,320 -6140 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-10 14:13:16,321 -6141 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-06-10 14:13:16,521 -6341 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-10 14:13:16,522 -6342 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3918 ms
+2021-06-10 14:13:19,037 -8857 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-10 14:13:19,325 -9145 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-06-10 14:13:19,616 -9436 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-10 14:13:19,671 -9491 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:19,738 -9558 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-10 14:13:19,744 -9564 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-10 14:13:19,755 -9575 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:19,755 -9575 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-06-10 14:13:19,768 -9588 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:19,769 -9589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:19,785 -9605 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-10 14:13:43,150 -1737 [main] INFO  cn.globalyouth.cosineapi.CosineApiApplication - Starting CosineApiApplication v0.0.1-SNAPSHOT using Java 16.0.1 on DESKTOP-IN4FS9D with PID 2116 (C:\Documents\问路\Cosine-Api\target\cosine-api-0.0.1-SNAPSHOT.jar started by yznzh in C:\Documents\问路\Cosine-Api\target)
+2021-06-10 14:13:43,156 -1743 [main] INFO  cn.globalyouth.cosineapi.CosineApiApplication - No active profile set, falling back to default profiles: default
+2021-06-10 14:13:46,318 -4905 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9339 (https)
+2021-06-10 14:13:46,353 -4940 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:46,357 -4944 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-10 14:13:46,361 -4948 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-06-10 14:13:46,539 -5126 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-10 14:13:46,539 -5126 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3213 ms
+2021-06-10 14:13:48,337 -6924 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-10 14:13:48,623 -7210 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-06-10 14:13:48,888 -7475 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-06-10 14:13:48,951 -7538 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-9339"]
+2021-06-10 14:13:49,492 -8079 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9339 (https) with context path ''
+2021-06-10 14:13:49,534 -8121 [main] INFO  cn.globalyouth.cosineapi.CosineApiApplication - Started CosineApiApplication in 7.494 seconds (JVM running for 8.571)
+2021-06-10 14:14:00,734 -19321 [https-jsse-nio-9339-exec-8] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-10 14:14:00,734 -19321 [https-jsse-nio-9339-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-10 14:14:00,743 -19330 [https-jsse-nio-9339-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-06-10 14:33:53,046 -1211633 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-06-10 14:33:53,061 -1211648 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.globalyouth.cosineapi.dao.mapper.TbResumeMapper">
+  <resultMap id="BaseResultMap" type="cn.globalyouth.cosineapi.model.pojo.TbResume">
+    <!--@mbg.generated generated on Mon Jul 05 19:13:01 CST 2021.-->
+    <!--@Table tb_resume-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user" jdbcType="INTEGER" property="user" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="record_values" jdbcType="VARCHAR" property="recordValues" />
+    <result column="pdf_url" jdbcType="VARCHAR" property="pdfUrl" />
+    <result column="jpg_url" jdbcType="VARCHAR" property="jpgUrl" />
+    <result column="is_default" jdbcType="TINYINT" property="isDefault" />
+    <result column="grade" jdbcType="SMALLINT" property="grade" />
+    <result column="percent" jdbcType="SMALLINT" property="percent" />
+    <result column="language" jdbcType="SMALLINT" property="language" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon Jul 05 19:13:01 CST 2021.-->
+    id, `user`, title, record_values, pdf_url, jpg_url, is_default, grade, `percent`, 
+    `language`, add_time
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated generated on Mon Jul 05 19:13:01 CST 2021.-->
+    update tb_resume
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`user` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.user,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="title = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.title,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="record_values = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.recordValues,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="pdf_url = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.pdfUrl,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="jpg_url = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.jpgUrl,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="is_default = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.isDefault,jdbcType=TINYINT}
+        </foreach>
+      </trim>
+      <trim prefix="grade = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.grade,jdbcType=SMALLINT}
+        </foreach>
+      </trim>
+      <trim prefix="`percent` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.percent,jdbcType=SMALLINT}
+        </foreach>
+      </trim>
+      <trim prefix="`language` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.language,jdbcType=SMALLINT}
+        </foreach>
+      </trim>
+      <trim prefix="add_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=INTEGER} then #{item.addTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated generated on Mon Jul 05 19:13:01 CST 2021.-->
+    insert into tb_resume
+    (`user`, title, record_values, pdf_url, jpg_url, is_default, grade, `percent`, `language`, 
+      add_time)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.user,jdbcType=INTEGER}, #{item.title,jdbcType=VARCHAR}, #{item.recordValues,jdbcType=VARCHAR}, 
+        #{item.pdfUrl,jdbcType=VARCHAR}, #{item.jpgUrl,jdbcType=VARCHAR}, #{item.isDefault,jdbcType=TINYINT}, 
+        #{item.grade,jdbcType=SMALLINT}, #{item.percent,jdbcType=SMALLINT}, #{item.language,jdbcType=SMALLINT}, 
+        #{item.addTime,jdbcType=TIMESTAMP})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" keyColumn="id" keyProperty="id" parameterType="cn.globalyouth.cosineapi.model.pojo.TbResume" useGeneratedKeys="true">
+    <!--@mbg.generated generated on Mon Jul 05 19:13:01 CST 2021.-->
+    insert into tb_resume
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      `user`,
+      title,
+      record_values,
+      pdf_url,
+      jpg_url,
+      is_default,
+      grade,
+      `percent`,
+      `language`,
+      add_time,
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      #{user,jdbcType=INTEGER},
+      #{title,jdbcType=VARCHAR},
+      #{recordValues,jdbcType=VARCHAR},
+      #{pdfUrl,jdbcType=VARCHAR},
+      #{jpgUrl,jdbcType=VARCHAR},
+      #{isDefault,jdbcType=TINYINT},
+      #{grade,jdbcType=SMALLINT},
+      #{percent,jdbcType=SMALLINT},
+      #{language,jdbcType=SMALLINT},
+      #{addTime,jdbcType=TIMESTAMP},
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id,jdbcType=INTEGER},
+      </if>
+      `user` = #{user,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      record_values = #{recordValues,jdbcType=VARCHAR},
+      pdf_url = #{pdfUrl,jdbcType=VARCHAR},
+      jpg_url = #{jpgUrl,jdbcType=VARCHAR},
+      is_default = #{isDefault,jdbcType=TINYINT},
+      grade = #{grade,jdbcType=SMALLINT},
+      `percent` = #{percent,jdbcType=SMALLINT},
+      `language` = #{language,jdbcType=SMALLINT},
+      add_time = #{addTime,jdbcType=TIMESTAMP},
+    </trim>
+  </insert>
+  <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id" parameterType="cn.globalyouth.cosineapi.model.pojo.TbResume" useGeneratedKeys="true">
+    <!--@mbg.generated generated on Mon Jul 05 19:13:01 CST 2021.-->
+    insert into tb_resume
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="user != null">
+        `user`,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="recordValues != null">
+        record_values,
+      </if>
+      <if test="pdfUrl != null">
+        pdf_url,
+      </if>
+      <if test="jpgUrl != null">
+        jpg_url,
+      </if>
+      <if test="isDefault != null">
+        is_default,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="percent != null">
+        `percent`,
+      </if>
+      <if test="language != null">
+        `language`,
+      </if>
+      <if test="addTime != null">
+        add_time,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="recordValues != null">
+        #{recordValues,jdbcType=VARCHAR},
+      </if>
+      <if test="pdfUrl != null">
+        #{pdfUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="jpgUrl != null">
+        #{jpgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="isDefault != null">
+        #{isDefault,jdbcType=TINYINT},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=SMALLINT},
+      </if>
+      <if test="percent != null">
+        #{percent,jdbcType=SMALLINT},
+      </if>
+      <if test="language != null">
+        #{language,jdbcType=SMALLINT},
+      </if>
+      <if test="addTime != null">
+        #{addTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        `user` = #{user,jdbcType=INTEGER},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="recordValues != null">
+        record_values = #{recordValues,jdbcType=VARCHAR},
+      </if>
+      <if test="pdfUrl != null">
+        pdf_url = #{pdfUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="jpgUrl != null">
+        jpg_url = #{jpgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="isDefault != null">
+        is_default = #{isDefault,jdbcType=TINYINT},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=SMALLINT},
+      </if>
+      <if test="percent != null">
+        `percent` = #{percent,jdbcType=SMALLINT},
+      </if>
+      <if test="language != null">
+        `language` = #{language,jdbcType=SMALLINT},
+      </if>
+      <if test="addTime != null">
+        add_time = #{addTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+</mapper>

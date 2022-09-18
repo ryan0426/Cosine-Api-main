@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.globalyouth.cosineapi.dao.mapper.TbEnterpriseInfoMapper">
+  <resultMap id="BaseResultMap" type="cn.globalyouth.cosineapi.model.pojo.TbEnterpriseInfo">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    <!--@Table tb_enterprise_info-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="industry" jdbcType="VARCHAR" property="industry" />
+    <result column="company_slogan" jdbcType="LONGVARCHAR" property="companySlogan" />
+    <result column="company_description" jdbcType="LONGVARCHAR" property="companyDescription" />
+    <result column="display_name" jdbcType="VARCHAR" property="displayName" />
+    <result column="company_nature" jdbcType="VARCHAR" property="companyNature" />
+    <result column="company_benefits" jdbcType="VARCHAR" property="companyBenefits" />
+    <result column="contact_email" jdbcType="VARCHAR" property="contactEmail" />
+    <result column="company_website" jdbcType="VARCHAR" property="companyWebsite" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    id, `name`, address, industry, company_slogan, company_description, display_name, 
+    company_nature, company_benefits, contact_email, company_website, create_time, update_time
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    update tb_enterprise_info
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.name,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="address = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.address,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="industry = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.industry,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="company_slogan = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.companySlogan,jdbcType=LONGVARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="company_description = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.companyDescription,jdbcType=LONGVARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="display_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.displayName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="company_nature = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.companyNature,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="company_benefits = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.companyBenefits,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="contact_email = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.contactEmail,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="company_website = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.companyWebsite,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="create_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.createTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+      <trim prefix="update_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=VARCHAR} then #{item.updateTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=VARCHAR}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    update tb_enterprise_info
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.name != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.name,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="address = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.address != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.address,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="industry = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.industry != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.industry,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="company_slogan = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.companySlogan != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.companySlogan,jdbcType=LONGVARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="company_description = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.companyDescription != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.companyDescription,jdbcType=LONGVARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="display_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.displayName != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.displayName,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="company_nature = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.companyNature != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.companyNature,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="company_benefits = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.companyBenefits != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.companyBenefits,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="contact_email = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.contactEmail != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.contactEmail,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="company_website = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.companyWebsite != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.companyWebsite,jdbcType=VARCHAR}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="create_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.createTime != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.createTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="update_time = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateTime != null">
+            when id = #{item.id,jdbcType=VARCHAR} then #{item.updateTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=VARCHAR}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    insert into tb_enterprise_info
+    (id, `name`, address, industry, company_slogan, company_description, display_name, 
+      company_nature, company_benefits, contact_email, company_website, create_time, 
+      update_time)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.id,jdbcType=VARCHAR}, #{item.name,jdbcType=VARCHAR}, #{item.address,jdbcType=VARCHAR}, 
+        #{item.industry,jdbcType=VARCHAR}, #{item.companySlogan,jdbcType=LONGVARCHAR}, 
+        #{item.companyDescription,jdbcType=LONGVARCHAR}, #{item.displayName,jdbcType=VARCHAR}, 
+        #{item.companyNature,jdbcType=VARCHAR}, #{item.companyBenefits,jdbcType=VARCHAR}, 
+        #{item.contactEmail,jdbcType=VARCHAR}, #{item.companyWebsite,jdbcType=VARCHAR}, 
+        #{item.createTime,jdbcType=TIMESTAMP}, #{item.updateTime,jdbcType=TIMESTAMP})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="cn.globalyouth.cosineapi.model.pojo.TbEnterpriseInfo">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    insert into tb_enterprise_info
+    (id, `name`, address, industry, company_slogan, company_description, display_name, 
+      company_nature, company_benefits, contact_email, company_website, create_time, 
+      update_time)
+    values
+    (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{industry,jdbcType=VARCHAR}, 
+      #{companySlogan,jdbcType=LONGVARCHAR}, #{companyDescription,jdbcType=LONGVARCHAR}, 
+      #{displayName,jdbcType=VARCHAR}, #{companyNature,jdbcType=VARCHAR}, #{companyBenefits,jdbcType=VARCHAR}, 
+      #{contactEmail,jdbcType=VARCHAR}, #{companyWebsite,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+    on duplicate key update 
+    id = #{id,jdbcType=VARCHAR}, 
+    `name` = #{name,jdbcType=VARCHAR}, 
+    address = #{address,jdbcType=VARCHAR}, 
+    industry = #{industry,jdbcType=VARCHAR}, 
+    company_slogan = #{companySlogan,jdbcType=LONGVARCHAR}, 
+    company_description = #{companyDescription,jdbcType=LONGVARCHAR}, 
+    display_name = #{displayName,jdbcType=VARCHAR}, 
+    company_nature = #{companyNature,jdbcType=VARCHAR}, 
+    company_benefits = #{companyBenefits,jdbcType=VARCHAR}, 
+    contact_email = #{contactEmail,jdbcType=VARCHAR}, 
+    company_website = #{companyWebsite,jdbcType=VARCHAR}, 
+    create_time = #{createTime,jdbcType=TIMESTAMP}, 
+    update_time = #{updateTime,jdbcType=TIMESTAMP}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="cn.globalyouth.cosineapi.model.pojo.TbEnterpriseInfo">
+    <!--@mbg.generated generated on Tue Jul 06 00:02:20 CST 2021.-->
+    insert into tb_enterprise_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="industry != null">
+        industry,
+      </if>
+      <if test="companySlogan != null">
+        company_slogan,
+      </if>
+      <if test="companyDescription != null">
+        company_description,
+      </if>
+      <if test="displayName != null">
+        display_name,
+      </if>
+      <if test="companyNature != null">
+        company_nature,
+      </if>
+      <if test="companyBenefits != null">
+        company_benefits,
+      </if>
+      <if test="contactEmail != null">
+        contact_email,
+      </if>
+      <if test="companyWebsite != null">
+        company_website,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="industry != null">
+        #{industry,jdbcType=VARCHAR},
+      </if>
+      <if test="companySlogan != null">
+        #{companySlogan,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="companyDescription != null">
+        #{companyDescription,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="displayName != null">
+        #{displayName,jdbcType=VARCHAR},
+      </if>
+      <if test="companyNature != null">
+        #{companyNature,jdbcType=VARCHAR},
+      </if>
+      <if test="companyBenefits != null">
+        #{companyBenefits,jdbcType=VARCHAR},
+      </if>
+      <if test="contactEmail != null">
+        #{contactEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="companyWebsite != null">
+        #{companyWebsite,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="industry != null">
+        industry = #{industry,jdbcType=VARCHAR},
+      </if>
+      <if test="companySlogan != null">
+        company_slogan = #{companySlogan,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="companyDescription != null">
+        company_description = #{companyDescription,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="displayName != null">
+        display_name = #{displayName,jdbcType=VARCHAR},
+      </if>
+      <if test="companyNature != null">
+        company_nature = #{companyNature,jdbcType=VARCHAR},
+      </if>
+      <if test="companyBenefits != null">
+        company_benefits = #{companyBenefits,jdbcType=VARCHAR},
+      </if>
+      <if test="contactEmail != null">
+        contact_email = #{contactEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="companyWebsite != null">
+        company_website = #{companyWebsite,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+</mapper>

@@ -1,0 +1,14 @@
+2021-06-10 14:13:19,840 -9660 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9339 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9339 or configure this application to listen on another port.
+
